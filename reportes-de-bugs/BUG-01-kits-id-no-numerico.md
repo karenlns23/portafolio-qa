@@ -32,6 +32,3 @@
 - Código de estado: **500 Internal Server Error**.
 - Cuerpo de la respuesta: página de error genérica del servidor, sin un mensaje de validación específico.
 - El sistema no valida el formato del parámetro antes de procesarlo, lo que provoca una excepción no controlada en el backend.
-
-## Evidencia
-> 📎 Agrega aquí la captura de pantalla de Postman (puedes arrastrar la imagen directamente al editor de GitHub). En Jira está adjunta como `image-20260827-002738.png`.

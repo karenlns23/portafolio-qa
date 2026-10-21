@@ -38,6 +38,3 @@ Casos de prueba negativos y de valores límite ejecutados con Postman sobre dos 
 | CP-API-18 | `productsWeight` por encima del máximo (6 kg) | `isItPossibleToDeliver: false` | `true` | ❌ Falló | UGS4G-18 |
 | CP-API-19 | `productsCount` negativo (-1) | No debe marcarse como disponible | `true` | ❌ Falló | UGS4G-19 |
 | CP-API-20 | `productsWeight` negativo (-1) | No debe marcarse como disponible | `true` | ❌ Falló | UGS4G-20 |
-
----
-> 💡 Revisa cada fila contra tus pruebas en Postman. Si alguno de los resultados esperados difiere de lo que tú definiste en el bootcamp, ajústalo. Si además tienes casos que **sí pasaron**, agrégalos con estado ✅: un portafolio con casos que pasan y que fallan se ve más completo.

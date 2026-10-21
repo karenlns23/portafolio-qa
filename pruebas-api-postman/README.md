@@ -1,32 +1,20 @@
 # Pruebas de API con Postman
 
-## Cómo subir tu colección real de Postman aquí
+Pruebas funcionales sobre dos endpoints de la API de Urban Grocers (Sprint 4), enfocadas en validación de entradas y reglas de negocio.
 
-1. Abre Postman → clic derecho sobre tu colección → **Export**.
-2. Elige el formato **Collection v2.1** → Export.
-3. Se descarga un archivo `.json` a tu computador.
-4. Sube ese archivo `.json` a esta carpeta en GitHub (lo explico en los pasos generales más abajo).
+## Endpoints probados
 
-## Qué documentar por cada endpoint probado
-
-| Endpoint | Método | Qué valida | Resultado |
+| Endpoint | Método | Qué se validó | Bugs |
 |---|---|---|---|
-| /api/ejemplo | GET | Devuelve status 200 y estructura correcta | ✅ Pasó |
-| /api/ejemplo | POST | Rechaza campos vacíos con status 400 | ✅ Pasó |
+| `/api/v1/kits/:id/products` | POST | Formato del parámetro `:id`, productos inexistentes, tipo de dato del `id` de producto, cantidades negativas y estructura de `productsList` | UGS4G-1 a UGS4G-5 |
+| `/order-and-go/v1/delivery` | POST | Campos obligatorios, tipos de dato, body vacío o con formato incorrecto, horario de atención, límites de artículos y peso, tramos de precio y valores negativos | UGS4G-6 a UGS4G-20 |
 
-## Ejemplo de script de prueba en Postman (pestaña "Tests")
-```javascript
-pm.test("El status code es 200", function () {
-    pm.response.to.have.status(200);
-});
+## Tipos de prueba aplicados
+- **Pruebas negativas:** campos faltantes, valores no numéricos, body vacío, body con formato incorrecto.
+- **Valores límite:** apertura (08:00) y cierre (22:00), máximo de 15 artículos, máximo de 6 kg, límite inferior del segundo tramo de precio (3.1 kg).
+- **Validación de códigos de estado:** se verificó que las entradas inválidas devuelvan `400 Bad Request` y no `500 Internal Server Error` ni `200 OK`.
 
-pm.test("La respuesta incluye el campo esperado", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData).to.have.property("id");
-});
-```
-
-> 💡 Si tus pruebas en Postman ya usan `pm.test(...)` como en el ejemplo de arriba, **eso ya es automatización de pruebas de API** — puedes decirlo con confianza en tu CV y en entrevista.
-
----
-*Reemplaza esta tabla y agrega tu colección `.json` real de un proyecto de TripleTen.*
+## Documentación relacionada
+- [Casos de prueba de API](../casos-de-prueba/casos-de-prueba-api.md)
+- [Reportes de bugs](../reportes-de-bugs)
+- [Plan de pruebas](../plan-de-pruebas/plan-de-pruebas-api-urban-grocers.md)

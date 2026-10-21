@@ -8,8 +8,8 @@ Proyectos de calidad de software desarrollados durante mi formación como QA Eng
 |---|---|
 | [`reportes-de-bugs/`](./reportes-de-bugs) | Índice de 55 bugs reportados en Jira en 3 proyectos + un reporte completo de ejemplo |
 | [`casos-de-prueba/`](./casos-de-prueba) | Casos de prueba de API derivados de los defectos encontrados |
-| [`pruebas-api-postman/`](./pruebas-api-postman) | Colección de Postman y notas de las pruebas de API |
-| [`plan-de-pruebas/`](./plan-de-pruebas) | Plantilla de plan de pruebas |
+| [`pruebas-api-postman/`](./pruebas-api-postman) | Endpoints probados con Postman y tipos de prueba aplicados |
+| [`plan-de-pruebas/`](./plan-de-pruebas) | Plan de pruebas de la API de Urban Grocers |
 
 ## 🧩 Proyectos probados
 
