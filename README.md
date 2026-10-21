@@ -1,18 +1,23 @@
 # Portafolio de QA — Karen Noreña
 
-Proyectos y ejercicios de calidad de software desarrollados durante mi formación como QA Engineer en TripleTen (jul. 2026 – en curso).
+Proyectos de calidad de software desarrollados durante mi formación como QA Engineer en TripleTen (jul. 2026 – en curso).
 
 ## 📁 Contenido
 
 | Carpeta | Qué encontrarás |
 |---|---|
-| [`casos-de-prueba/`](./casos-de-prueba) | Casos de prueba diseñados para las aplicaciones evaluadas en el bootcamp |
-| [`reportes-de-bugs/`](./reportes-de-bugs) | Reportes de defectos encontrados, con pasos para reproducir |
-| [`plan-de-pruebas/`](./plan-de-pruebas) | Planes de prueba por proyecto (alcance, estrategia, criterios) |
-| [`pruebas-api-postman/`](./pruebas-api-postman) | Colecciones de Postman y pruebas de endpoints |
+| [`reportes-de-bugs/`](./reportes-de-bugs) | Índice de 55 bugs reportados en Jira en 3 proyectos + un reporte completo de ejemplo |
+| [`casos-de-prueba/`](./casos-de-prueba) | Casos de prueba de API derivados de los defectos encontrados |
+| [`pruebas-api-postman/`](./pruebas-api-postman) | Colección de Postman y notas de las pruebas de API |
+| [`plan-de-pruebas/`](./plan-de-pruebas) | Plantilla de plan de pruebas |
 
-## 🛠️ Herramientas usadas
-Jira · Postman · Android Studio (emuladores) · Git/GitHub
+## 🧩 Proyectos probados
 
-## Sobre este portafolio
-Cada carpeta tiene una plantilla base. Voy actualizando este repositorio a medida que avanzo en el bootcamp con proyectos reales.
+| Proyecto Jira | Tipo de prueba | Bugs reportados |
+|---|---|---|
+| Urban Grocers – Sprint 4 (`UGS4G`) | Pruebas de API (negativas y de límites) con Postman | 20 |
+| Sprint 3 (`S3KLNSG`) | Pruebas funcionales de una app de reserva de autos (mapa, tarifas, pago con tarjeta, validación de campos) | 28 |
+| Sprint 6 (`S6KLNSG`) | Pruebas funcionales de una app de pedidos con mapa de restaurantes | 7 |
+
+## 🛠️ Herramientas
+Jira · Postman · Android Studio (emuladores) · Git/GitHub · SQL · Consola (Linux)
